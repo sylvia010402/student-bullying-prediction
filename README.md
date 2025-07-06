@@ -1,7 +1,9 @@
-# Student Bullying Risk Prediction System
+# Making Care Common - Student Bullying Risk Prediction System
 
 ## Problem Statement
 Bullying affects millions of students and can have severe consequences for academic performance, mental health, and social development. This project develops a data-driven early intervention system to identify students at risk of bullying using survey responses, enabling schools to provide timely support and create safer learning environments.
+
+Making Caring Common is a project at the Harvard Graduate School of Education, that learns about what it’s like to be a student at school. The main goal of the survey is for teachers and leaders to learn what students think about values, safety, support, and relationships at school. The survey will also ask questions about how you use social media, including the kinds of social media students use, who they use it to connect with, and whether and how they think social media affects their interpersonal relationships. 
 
 ## Data Source
 - **Dataset**: Harvard Graduate School of Education Student Survey (2016-2017)
