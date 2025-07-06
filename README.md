@@ -1,5 +1,11 @@
 # Making Care Common - Student Bullying Risk Prediction System
 
+## Files in This Repository
+- **Code**: Well-documented R scripts for complete analysis pipeline
+- **Documentation**: Comprehensive writeup with methodology and discussion
+- **Results**: Visualizations and performance metrics
+- **Data Dictionary**: Survey variable definitions and feature engineering logic
+
 ## Problem Statement
 Bullying affects millions of students and can have severe consequences for academic performance, mental health, and social development. This project develops a data-driven early intervention system to identify students at risk of bullying using survey responses, enabling schools to provide timely support and create safer learning environments.
 
@@ -29,10 +35,10 @@ Making Caring Common is a project at the Harvard Graduate School of Education, t
   Q18 (Belonging): `belong1:belong11` → `belong_mean`
   Q21 (Rules): `rules1:rules9` → `rules_mean`
 
-**Binary Questions** → **Sum Scores**
-Q13 (Safety Measures): `feel_safer_*` → `feel_safer_sum`
-Q22 (Social Media Use): `sm_facebook:sm_none` → `sm_sum`
-Q35 (Negative SM Experiences): `sm_ever_*` → `sm_ever_sum`
+  **Binary Questions** → **Sum Scores**
+  Q13 (Safety Measures): `feel_safer_*` → `feel_safer_sum`
+  Q22 (Social Media Use): `sm_facebook:sm_none` → `sm_sum`
+  Q35 (Negative SM Experiences): `sm_ever_*` → `sm_ever_sum`
 
 - **Missing Data Handling**: Used multiple imputation (MICE) to preserve data integrity
 - **Domain Expertise**: Applied education survey methodology to create interpretable features
@@ -79,23 +85,6 @@ Q35 (Negative SM Experiences): `sm_ever_*` → `sm_ever_sum`
 - **Visualization**: ggplot2 for results presentation
 - **Model Evaluation**: pROC for performance assessment
 
-### Repository Structure
-```
-├── README.md
-├── code/
-│   ├── 1_data_cleaning.R        # Feature engineering pipeline
-│   ├── 2_regression_model.R     # Continuous score prediction
-│   └── 3_classification_model.R # Risk classification
-├── data/
-│   ├── survey_codebook.xlsx     # Variable definitions
-│   └── sample_predictions.csv   # Model outputs (anonymized)
-├── results/
-│   ├── feature_importance.png   # Variable importance plot
-│   ├── model_performance.png    # ROC curves and metrics
-│   └── writeup.pdf             # Complete analysis report
-└── docs/
-    └── methodology.md          # Detailed technical approach
-```
 
 ## Key Results
 
@@ -139,11 +128,6 @@ Q35 (Negative SM Experiences): `sm_ever_*` → `sm_ever_sum`
 - Measure impact of early identification on student outcomes
 - Study optimal threshold settings across different school environments
 
-## Files in This Repository
-- **Code**: Well-documented R scripts for complete analysis pipeline
-- **Documentation**: Comprehensive writeup with methodology and discussion
-- **Results**: Visualizations and performance metrics
-- **Data Dictionary**: Survey variable definitions and feature engineering logic
 
 ## Contact
 For questions about methodology, implementation, or collaboration opportunities, please reach out via LinkedIn or email.
