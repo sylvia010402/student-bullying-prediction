@@ -20,7 +20,20 @@ Making Caring Common is a project at the Harvard Graduate School of Education, t
 
 ### 1. Data Engineering & Feature Creation
 - **Dimensionality Reduction**: Compressed 195 survey variables to 45 meaningful features
-- **Smart Aggregation**: Created composite scores (e.g., `safe_mean`, `belong_mean`, `disc_mean`) by combining related Likert scale questions
+- **Variable Aggregation**: Created composite scores by combining related Likert scale questions:
+  
+  **Likert Scale Questions** → **Mean Scores**
+  Q12 (Safety): `psafe1:psafe7` + `esafe1:esafe7` → `safe_mean`
+  Q16 (Discrimination): `disc_race:disc_country` → `disc_mean`
+  Q17 (Support): `support1:support8` → `support_mean`
+  Q18 (Belonging): `belong1:belong11` → `belong_mean`
+  Q21 (Rules): `rules1:rules9` → `rules_mean`
+
+**Binary Questions** → **Sum Scores**
+Q13 (Safety Measures): `feel_safer_*` → `feel_safer_sum`
+Q22 (Social Media Use): `sm_facebook:sm_none` → `sm_sum`
+Q35 (Negative SM Experiences): `sm_ever_*` → `sm_ever_sum`
+
 - **Missing Data Handling**: Used multiple imputation (MICE) to preserve data integrity
 - **Domain Expertise**: Applied education survey methodology to create interpretable features
 
@@ -134,6 +147,3 @@ Making Caring Common is a project at the Harvard Graduate School of Education, t
 
 ## Contact
 For questions about methodology, implementation, or collaboration opportunities, please reach out via LinkedIn or email.
-
----
-*This project demonstrates the intersection of education policy knowledge, statistical methodology, and practical implementation - essential skills for data-driven decision making in educational settings.*
