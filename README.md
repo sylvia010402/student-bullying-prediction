@@ -127,7 +127,3 @@ Making Caring Common is a project at the Harvard Graduate School of Education, t
 - Pilot intervention programs with identified high-risk students
 - Measure impact of early identification on student outcomes
 - Study optimal threshold settings across different school environments
-
-
-## Contact
-For questions about methodology, implementation, or collaboration opportunities, please reach out via LinkedIn or email.
