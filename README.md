@@ -4,7 +4,7 @@
 - **Code**: Well-documented R scripts for complete analysis pipeline
 - **Documentation**: Comprehensive writeup with methodology and discussion
 - **Results**: Visualizations and performance metrics
-- **Data Dictionary**: Survey variable definitions and feature engineering logic
+- **Data**: Survey variable definitions and feature engineering logic
 
 ## Problem Statement
 Bullying affects millions of students and can have severe consequences for academic performance, mental health, and social development. This project develops a data-driven early intervention system to identify students at risk of bullying using survey responses, enabling schools to provide timely support and create safer learning environments.
